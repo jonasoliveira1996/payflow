@@ -1,17 +1,11 @@
 package com.jonas.payflow.domain.model;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "accounts")
-@Getter
-@Setter
-@NoArgsConstructor
 public class Account {
 
     @Id
@@ -21,4 +15,31 @@ public class Account {
     @OneToOne
     private User user;
     private BigDecimal balance;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public BigDecimal getBalance() {
+        return balance;
+    }
+
+    public void setBalance(BigDecimal balance) {
+        this.balance = balance;
+    }
+
+    public Account() {
+    }
 }
