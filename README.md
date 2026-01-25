@@ -8,7 +8,7 @@ O projeto tem como objetivo estudar e aplicar boas práticas de desenvolvimento 
 
 O Payflow simula funcionalidades comuns de sistemas financeiros, como:
 
-criação de usuários
+- criação de usuários
 
 criação de contas
 
@@ -20,7 +20,7 @@ Nesta fase inicial, o foco está na estruturação do projeto e na implementaç�
 
 ## 🛠️ Tecnologias
 
-Java 17
+**Java 17**
 
 Spring Boot
 
