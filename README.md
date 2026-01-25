@@ -10,25 +10,25 @@ O Payflow simula funcionalidades comuns de sistemas financeiros, como:
 
 - criação de usuários
 
-criação de contas
+- criação de contas
 
-movimentações de saldo (crédito e débito)
+- movimentações de saldo (crédito e débito)
 
-transferências entre contas
+- transferências entre contas
 
 Nesta fase inicial, o foco está na estruturação do projeto e na implementação das regras essenciais que impactam o saldo das contas.
 
 ## 🛠️ Tecnologias
 
-**Java 17**
+✅ Java 17
 
-Spring Boot
+✅ Spring Boot
 
-Spring Data JPA
+✅ Spring Data JPA
 
-SQL Server
+✅ SQL Server
 
-Maven
+✅ Maven
 
 ## 🚧 Status do projeto
 
