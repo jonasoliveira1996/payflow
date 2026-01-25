@@ -1,31 +1,35 @@
-# Payflow
+#Payflow
 
-API REST para simulação de fluxo de pagamentos, desenvolvida em Java com Spring Boot.
+API REST desenvolvida em Java com Spring Boot para simular operações financeiras básicas em um contexto de pagamentos.
 
-O projeto tem como objetivo estudar e aplicar boas práticas de backend, modelando transações financeiras e seus estados de processamento.
+O projeto tem como objetivo estudar e aplicar boas práticas de desenvolvimento backend, com foco na modelagem do domínio, regras de negócio e organização da aplicação.
 
-## 💳 Sobre o projeto
+##💳 Sobre o projeto
 
-O Payflow simula o ciclo de vida de um pagamento em sistemas corporativos, desde a criação da transação até a atualização do seu status.
+O Payflow simula funcionalidades comuns de sistemas financeiros, como:
 
-O foco está na modelagem correta do domínio, regras de negócio e organização da aplicação.
+criação de usuários
 
-## 🔄 Fluxo de pagamento
+criação de contas
 
-1. Criação da transação (PENDING)
-2. Processamento do pagamento (PROCESSING)
-3. Finalização:
-   - PAID (pago com sucesso)
-   - FAILED (falha no pagamento)
+movimentações de saldo (crédito e débito)
 
-## 🛠️ Tecnologias
+transferências entre contas
 
-- Java 17
-- Spring Boot
-- Spring Data JPA
-- SQL Server
-- Maven
+Nesta fase inicial, o foco está na estruturação do projeto e na implementação das regras essenciais que impactam o saldo das contas.
 
-## 🚧 Status do projeto
+##🛠️ Tecnologias
 
-Em desenvolvimento — projeto criado com fins educacionais e evolutivos.
+Java 17
+
+Spring Boot
+
+Spring Data JPA
+
+SQL Server
+
+Maven
+
+##🚧 Status do projeto
+
+Em desenvolvimento — projeto criado com fins educacionais, com evolução incremental conforme o aprendizado avança.
