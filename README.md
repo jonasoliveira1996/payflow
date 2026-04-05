@@ -1,4 +1,4 @@
-# Payflow
+<img width="1221" height="756" alt="image" src="https://github.com/user-attachments/assets/2a8013ca-881d-49ec-a2d3-1fbd5e41fac5" /># Payflow
 
 API REST desenvolvida em Java com Spring Boot para simular operações financeiras básicas em um contexto de pagamentos.
 
@@ -33,3 +33,7 @@ Nesta fase inicial, o foco está na estruturação do projeto e na implementaç�
 ## 🚧 Status do projeto
 
 Em desenvolvimento — projeto criado com fins educacionais, com evolução incremental conforme o aprendizado avança.
+
+## 🍀 Swagger
+
+<img width="1179" height="750" alt="image" src="https://github.com/user-attachments/assets/2ec76132-6e98-4910-b29a-390cf1d07399" />
