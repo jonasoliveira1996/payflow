@@ -1,5 +1,3 @@
-<img width="1221" height="756" alt="image" src="https://github.com/user-attachments/assets/2a8013ca-881d-49ec-a2d3-1fbd5e41fac5" /># Payflow
-
 API REST desenvolvida em Java com Spring Boot para simular operações financeiras básicas em um contexto de pagamentos.
 
 O projeto tem como objetivo estudar e aplicar boas práticas de desenvolvimento backend, com foco na modelagem do domínio, regras de negócio e organização da aplicação.
