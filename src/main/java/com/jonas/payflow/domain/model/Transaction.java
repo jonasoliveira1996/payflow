@@ -1,56 +1,47 @@
 package com.jonas.payflow.domain.model;
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 
-@Entity
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Table(name = "transactions")
+@Entity
 public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     private Account account;
 
+    @Column(nullable = false)
     private BigDecimal amount;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private TransactionType type;
 
-    public Long getId() {
-        return id;
-    }
+    public Transaction(Account account, BigDecimal amount, TransactionType type) {
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+        if (account == null) {
+            throw new IllegalArgumentException("Conta é obrigatória");
+        }
 
-    public Account getAccount() {
-        return account;
-    }
+        if (amount == null || amount.compareTo(BigDecimal.ZERO) <= 0) {
+            throw new IllegalArgumentException("Valor da transação deve ser maior que zero");
+        }
 
-    public void setAccount(Account account) {
+        if (type == null) {
+            throw new IllegalArgumentException("Tipo da transação é obrigatório");
+        }
+
         this.account = account;
-    }
-
-    public BigDecimal getAmount() {
-        return amount;
-    }
-
-    public void setAmount(BigDecimal amount) {
         this.amount = amount;
-    }
-
-    public TransactionType getType() {
-        return type;
-    }
-
-    public void setType(TransactionType type) {
         this.type = type;
-    }
-
-    public Transaction() {
     }
 }

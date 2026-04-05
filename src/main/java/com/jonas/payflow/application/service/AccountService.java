@@ -3,6 +3,7 @@ package com.jonas.payflow.application.service;
 import com.jonas.payflow.domain.model.Account;
 import com.jonas.payflow.domain.model.User;
 import com.jonas.payflow.domain.repository.AccountRepository;
+import com.jonas.payflow.exception.BusinessException;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
@@ -26,7 +27,7 @@ public class AccountService {
     }
 
     public Account findById(Long accountId) {
-        return accountRepository.findById(accountId).orElseThrow(() -> new RuntimeException("Conta não encontratada"));
+        return accountRepository.findById(accountId).orElseThrow(() -> new BusinessException("Conta não encontratada"));
     }
 
     @Transactional

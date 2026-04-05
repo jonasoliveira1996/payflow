@@ -19,11 +19,14 @@ public class TransactionService {
 
     public Transaction createCredit(Account account,
                                     BigDecimal amount) {
-        Transaction transaction = new Transaction();
+        Transaction transaction = new Transaction(account, amount, TransactionType.CREDIT);
 
-        transaction.setAccount(account);
-        transaction.setAmount(amount);
-        transaction.setType(TransactionType.CREDIT);
+        return transactionRepository.save(transaction);
+    }
+
+    public Transaction createDebit(Account account, BigDecimal amount) {
+
+        Transaction transaction = new Transaction(account, amount, TransactionType.DEBIT);
 
         return transactionRepository.save(transaction);
     }
